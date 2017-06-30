@@ -1,0 +1,47 @@
+{
+  "name": "@smallstack/markdown-component",
+  "version": "0.1.0",
+  "description": "Markdown Component for the smallstack framework",
+  "author": "smallstack GmbH",
+  "main": "./dist/bundle/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "postinstall": "npm run bundle",
+    "compile": "tsc && rollup -c",
+    "bundle": "npm run copyhtml && npm run compile",
+    "copyhtml": "copyfiles -e \"dist/**/*\" \"**/*.html\" ./dist"
+  },
+  "keywords": [
+    "smallstack",
+    "framework",
+    "markdown",
+    "component"
+  ],
+  "smallstack": {
+    "component": {
+      "nativescript": {
+        "entrypoint": "./dist/bundle/index.umd.js"
+      },
+      "web": {
+        "entrypoint": "./dist/bundle/index.umd.js"
+      }
+    }
+  },
+  "dependencies": {
+    "@angular/core": "^4.2.4",
+    "@smallstack/core-client": "*",
+    "@smallstack/core-common": "*",
+    "@smallstack/nativescript": "*",
+    "marked": "^0.3.6",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.43.0",
+    "rollup-plugin-html": "^0.2.1",
+    "typescript": "^2.4.1"
+  }
+}
