@@ -10,7 +10,8 @@ export default {
         "@angular/core": "ng.core",
         "@smallstack/core-common": "@smallstack/core-common",
         "@smallstack/core-client": "@smallstack/core-client",
-        "@smallstack/nativescript": "@smallstack/nativescript"
+        "@smallstack/nativescript": "@smallstack/nativescript",
+        "marked": "marked"
     },
     plugins: [
         html({

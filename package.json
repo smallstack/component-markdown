@@ -30,7 +30,6 @@
     }
   },
   "dependencies": {
-    "@angular/core": "^4.2.4",
     "@smallstack/core-client": "*",
     "@smallstack/core-common": "*",
     "@smallstack/nativescript": "*",
