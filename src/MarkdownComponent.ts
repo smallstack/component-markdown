@@ -53,7 +53,7 @@ export class ViewMarkdownComponent extends AngularBaseComponentController implem
     public html: string = "Loading...";
 
     public afterInitialization() {
-        const data: any = this.getData("markdown");
+        const data: any = this.getData("data");
 
         if (typeof data === "string") {
             const md = marked.setOptions({
