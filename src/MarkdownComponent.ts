@@ -90,5 +90,4 @@ AngularCMSComponent.new("MarkdownComponent")
     .setNativescriptComponent("NSViewMarkdownComponent")
     .setEditorComponent("MarkdownComponentEditor")
     .setWebComponent("ViewMarkdownComponent")
-    .addSocket(ComponentSocket.createInput("markdown", ComponentSocketType.STRING))
     .register();
