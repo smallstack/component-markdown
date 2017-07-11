@@ -1,0 +1,17 @@
+language: node_js
+dist: trusty
+node_js: "6"
+install:
+    - npm install
+    - npm run bundle
+script:
+    - smallstack help
+notifications:
+  slack: $SLACK_TOKEN
+  on_success: change
+deploy:
+  provider: npm
+  email: "max@smallstack.io"
+  api_key: $NPM_API_KEY
+  on:
+    tags: true
