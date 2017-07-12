@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
+    "postinstall": "npm run bundle",
     "compile": "tsc && rollup -c",
     "bundle": "npm run compile",
     "copyhtml": "copyfiles -e \"dist/**/*\" \"**/*.html\" ./dist"
