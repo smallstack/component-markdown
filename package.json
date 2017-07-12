@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "compile": "tsc && rollup -c",
-    "bundle": "npm run copyhtml && npm run compile",
+    "bundle": "npm run compile",
     "copyhtml": "copyfiles -e \"dist/**/*\" \"**/*.html\" ./dist"
   },
   "keywords": [
@@ -36,7 +36,6 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "copyfiles": "^1.2.0",
     "rimraf": "^2.6.1",
     "rollup": "^0.45.1",
     "rollup-plugin-html": "^0.2.1",
