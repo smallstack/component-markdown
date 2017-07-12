@@ -1,6 +1,6 @@
 {
   "name": "@smallstack/markdown-component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Markdown Component for the smallstack framework",
   "author": "smallstack GmbH",
   "main": "./dist/bundle/index.umd.js",
@@ -12,6 +12,9 @@
     "bundle": "npm run compile",
     "copyhtml": "copyfiles -e \"dist/**/*\" \"**/*.html\" ./dist"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "smallstack",
     "framework",
