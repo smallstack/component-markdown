@@ -1,0 +1,6 @@
+src/
+smallstack/
+index.ts
+rollup.config.js
+.travis.yml
+tsconfig.json
