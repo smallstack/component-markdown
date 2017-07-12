@@ -1,4 +1,5 @@
 import html from "rollup-plugin-html";
+import resolve from "rollup-plugin-node-resolve";
 
 export default {
     format: "umd",
@@ -21,7 +22,8 @@ export default {
                 collapseWhitespace: true,
                 removeComments: true
             }
-        })
+        }),
+        resolve()
     ],
     external: [
         "@angular/core",
@@ -35,6 +37,6 @@ export default {
         if (/at the top level of an ES module, and has been rewritten/.test(message)) {
             return;
         }
-        console.error(message);
+        console.warn(message);
     }
 };
